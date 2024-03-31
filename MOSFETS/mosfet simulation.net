@@ -1,0 +1,12 @@
+* C:\Users\mrsuh\AppData\Local\LTspice\mosfet simulation.asc
+M1 Drain N002 0 NC_01 NMOS
+VGS N003 0 9
+VDS N001 0 12
+R1 N003 N002 470
+R2 N001 Drain 22
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\mrsuh\AppData\Local\LTspice\lib\cmp\standard.mos
+.dc VDS 0 25 1 VGS 0 9 1
+.backanno
+.end
